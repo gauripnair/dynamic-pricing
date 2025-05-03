@@ -107,12 +107,10 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import Lasso
 
-# === MongoDB Connection ===
-client = MongoClient("mongodb+srv://user:password@cluster0.jk7ec.mongodb.net/")
+client = MongoClient("mongodb+srv://user:pass@cluster0.jk7ec.mongodb.net/")
 db = client["dynamic_pricing"]
 users_col = db["user"]
 products_col = db["product"]
-
 # === Load Demand Scores ===
 demand_df = pd.read_csv("demand_scores.csv")
 demand_dict = dict(zip(demand_df["Product Name"], demand_df["Demand Score"]))
