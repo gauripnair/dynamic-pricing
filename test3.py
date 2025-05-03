@@ -108,7 +108,7 @@ import numpy as np
 from sklearn.linear_model import Lasso
 
 # === MongoDB Connection ===
-client = MongoClient("mongodb+srv://vinuu53:6Os7IJR0UZ9WF9wj@cluster0.jk7ec.mongodb.net/")
+client = MongoClient("mongodb+srv://user:password@cluster0.jk7ec.mongodb.net/")
 db = client["dynamic_pricing"]
 users_col = db["user"]
 products_col = db["product"]
